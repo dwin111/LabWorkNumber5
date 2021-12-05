@@ -18,7 +18,26 @@ namespace LabWorkNumber5
         }
         public override string InformationOuntput()
         {
-            return "Друг "+ base.InformationOuntput() + " адреса проживання " + _birthday;
+            return "Друг "+ $"{Name} живе за адресою {Adress} номер телефону {PhoneNumber}" 
+                + " дата народження " + _birthday;
+        }
+        public override bool CheckingForAMatch(string text)
+        {
+            if (base.CheckingForAMatch(text) == false)
+            {
+                if (text.Equals(_birthday.ToLower()))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

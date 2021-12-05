@@ -14,7 +14,10 @@ namespace LabWorkNumber5
             Adress = adress;
             PhoneNumber = phoneNumber;
         }
-        
 
+        public override string InformationOuntput()
+        {
+            return $"{Name} живе за адресою {Adress} номер телефону {PhoneNumber}";
+        }
     }
 }

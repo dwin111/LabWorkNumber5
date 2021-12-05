@@ -20,7 +20,27 @@ namespace LabWorkNumber5
         }
         public override string InformationOuntput()
         {
-            return "Організація " + base.InformationOuntput() + "факс " + _fax + " контактна особа " + _contactPerson.Name;
+            return "Організація " + $"{Name} находиться за адресою {Adress} номер телефону {PhoneNumber}" 
+                + "факс " + _fax + " контактна особа " + _contactPerson.Name;
+        }
+        public override bool CheckingForAMatch(string text)
+        {
+            if (base.CheckingForAMatch(text) == false)
+            {
+                if (text.Equals(_fax.ToLower()) || text.Equals(_contactPerson.Name.ToLower()))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return true;
+            }
+
         }
     }
 }

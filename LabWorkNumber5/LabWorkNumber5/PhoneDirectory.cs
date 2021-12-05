@@ -12,10 +12,7 @@ namespace LabWorkNumber5
         public string Adress { get; set;}
         public string PhoneNumber { get; set;}
 
-        public virtual string InformationOuntput()
-        {
-            return $"{Name} живе по адресі {Adress} номер телефону {PhoneNumber}";
-        }
+        public abstract string InformationOuntput();
 
         public virtual bool CheckingForAMatch(string text)
         {
