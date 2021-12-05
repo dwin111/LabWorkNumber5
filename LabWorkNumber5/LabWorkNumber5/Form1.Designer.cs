@@ -39,8 +39,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -67,6 +65,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button7 = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -187,7 +186,6 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.comboBox4);
-            this.tabPage2.Controls.Add(this.textBox11);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.textBox10);
             this.tabPage2.Controls.Add(this.label10);
@@ -206,24 +204,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Організація";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(542, 267);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(184, 36);
-            this.comboBox4.TabIndex = 22;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.Location = new System.Drawing.Point(542, 194);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(184, 34);
-            this.textBox11.TabIndex = 21;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -496,6 +476,15 @@
             this.textBox12.Size = new System.Drawing.Size(279, 34);
             this.textBox12.TabIndex = 1;
             // 
+            // comboBox4
+            // 
+            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(542, 194);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(184, 36);
+            this.comboBox4.TabIndex = 22;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -532,8 +521,6 @@
         private Label label3;
         private TextBox textBox2;
         private Label label2;
-        private ComboBox comboBox4;
-        private TextBox textBox11;
         private Label label11;
         private TextBox textBox10;
         private Label label10;
@@ -558,5 +545,6 @@
         private Button button7;
         private TextBox textBox12;
         private ListBox listBox1;
+        private ComboBox comboBox4;
     }
 }
